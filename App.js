@@ -1,11 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import {Input} from "./components/Inputs/Input";
+import {ButtonValidate} from "./components/Buttons/ButtonValidate";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.mainContent}>
+        <Text>les degres</Text>
+        <Input />
+        <ButtonValidate />
+      </View>
     </View>
   );
 }
@@ -13,8 +17,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: '#c4c2c2',
     justifyContent: 'center',
+    padding:20
   },
+  mainContent: {
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    height: 350
+  }
 });
