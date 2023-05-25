@@ -1,8 +1,10 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
-export function ButtonValidate() {
+export function ButtonValidate({onPress}) {
   return <>
-    <TouchableOpacity style={styles.buttonValidate} ><Text style={styles.textButton}>mon bouton</Text></TouchableOpacity>
+    <TouchableOpacity style={styles.buttonValidate} onPress={onPress}>
+      <Text style={styles.textButton}>Change unit</Text>
+    </TouchableOpacity>
   </>
 }
 

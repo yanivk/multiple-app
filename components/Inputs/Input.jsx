@@ -1,9 +1,9 @@
 import {StyleSheet, TextInput, Text, View} from "react-native";
 
-export function Input() {
+export function Input({defaultValue, defaultUnit, onChangeText}) {
   return <View style={styles.InputWrapper}>
-    <TextInput style={styles.inputField} placeholder={"entre une valuer"} maxLength={4} keyboardType={"numeric"}/>
-    <Text style={styles.inputIcon}>C</Text>
+    <TextInput style={styles.inputField} placeholder={"entre une valuer"} maxLength={4} keyboardType={"numeric"} defaultValue={defaultValue} onChangeText={onChangeText}/>
+    <Text style={styles.inputIcon}>{defaultUnit}</Text>
   </View>
 }
 
