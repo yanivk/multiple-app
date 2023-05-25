@@ -15,3 +15,11 @@ export function covertTemperatureTo(unit, value) {
   if (unit === UNITS.celcius) return celciusToFahrenheit(value);
   return fahrenheitToCelcius(value);
 }
+
+export function isColdTemperature(unit, value) {
+  if (unit === UNITS.celcius) {
+    return value <= 0;
+  } else {
+    return value <= 32;
+  }
+}

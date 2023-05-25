@@ -13,9 +13,13 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor: "#51a2dc",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    borderRadius: 5,
+    width: 200
   },
   textButton: {
-    paddingHorizontal: 20
+    paddingHorizontal: 20,
+    color: "#ffffff",
+    fontSize: 15
   }
 });
